@@ -6,20 +6,20 @@ import{ComputersCanvas} from './canvas';
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
+    <section className='relative w-full h-screen mx-auto pb-2'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7x1 mx-auto flex flex-row items-start gap-5`} > 
         < div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
-          <div className='w-1 sm:h-80 h40 violet-gradient'/>
+          <div className='w-5 h-5 rounded-full bg-tertiary'/>
+          <div className='w-1 sm:h-80 h40 bg-secondary'/>
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi,I'm <span className='text-[#915eff]'> Santino </span> </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>Strengthening the Web3 ecosystem through audits and secure practices</p>
+          <h1 className={`${styles.heroHeadText} text-secondary`}> Hi,I'm <span className='text-secondary'> Santino </span> </h1>
+          <p className={`${styles.heroSubText} mt-2 text-secondary`}>Strengthening the Web3 ecosystem through audits and secure practices</p>
         </div>
       </div>
 
-      <ComputersCanvas/>
+      <ComputersCanvas />
       
       <div>
         &nbsp;

@@ -14,11 +14,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary outline-black-200 outline-2`}>
       <div className='w-full flex justify-between items-center max-w-7x1 mx-auto'>
         <Link to="/" className='flex items-center gap-2' onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
-          <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18`x] font-bold cursor-pointer flex'> S-DiDo &nbsp; <span> | Web3 Security</span></p>
+          <img src={logo} alt="logo" className='w-9 h-9 object-contain bg-tertiary rounded-3xl' />
+          <p className='text-secondary text-[18`x] font-bold cursor-pointer flex'> S-DiDo &nbsp; <span> | Web3 Security</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
